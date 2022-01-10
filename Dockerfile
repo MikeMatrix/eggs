@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH openjdk:17-slim
+FROM        openjdk:17-slim
 
 LABEL       author="Michael Braun" maintainer="m.braun92@gmail.com"
 
@@ -147,9 +147,9 @@ RUN set -ex; \
 	rm -f get-pip.py
 
 # Setup Minecraft Exporter
+WORKDIR /metrics/minecraft_exporter
 COPY requirements.txt minecraft_exporter.py /metrics/minecraft_exporter
 
-WORKDIR /metrics/minecraft_exporter
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
