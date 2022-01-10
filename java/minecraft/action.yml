@@ -1,5 +1,0 @@
-name: 'java-17-minecraft-exporter'
-description: 'Merged version of 2 image bases to enable minecraft statistics exporting'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'

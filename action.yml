@@ -1,4 +1,4 @@
-name: 'java-17-minecraft-exporter'
+name: 'minecraft_egg'
 description: 'Merged version of 2 image bases to enable minecraft statistics exporting'
 runs:
   using: 'docker'

@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build ./java/minecraft --file Dockerfile --tag minecraft_egg:$(date +%s)
+      run: docker build . --file Dockerfile --tag minecraft_egg:$(date +%s)
