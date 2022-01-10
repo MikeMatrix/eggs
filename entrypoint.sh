@@ -39,7 +39,7 @@ java -version
 
 printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mpython /metrics/minecraft_exporter/minecraft_exporter.py\n"
 
-python /metrics/minecraft_exporter/minecraft_exporter.py &
+(sleep 60; python /metrics/minecraft_exporter/minecraft_exporter.py) &
 
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
 # variable format of "${VARIABLE}" before evaluating the string and automatically
