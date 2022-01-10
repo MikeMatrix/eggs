@@ -148,7 +148,7 @@ RUN set -ex; \
 
 # Setup Minecraft Exporter
 WORKDIR /metrics/minecraft_exporter
-COPY requirements.txt minecraft_exporter.py /metrics/minecraft_exporter
+COPY requirements.txt minecraft_exporter.py /metrics/minecraft_exporter/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
